@@ -1,0 +1,22 @@
+//@version=5 
+indicator(title="6 EMA", shorttitle="6 EMA", overlay=true, timeframe="", timeframe_gaps=true)
+dlugosc1 = input.int(10, minval=1, title="Length 1")
+dlugosc2= input.int(20, minval=1, title="Length 2")
+dlugosc3 = input.int(50, minval=1, title="Length 3")
+dlugosc4 = input.int(100, minval=1, title="Length 4")
+dlugosc5 = input.int(150, minval=1, title="Length 5")
+dlugosc6 = input.int(200, minval=1, title="Length 6")
+
+najkrotsza = ta.ema(close, dlugosc1)
+krotsza = ta.ema(close, dlugosc2)
+srednia = ta.ema(close, dlugosc3)
+dluga = ta.ema(close, dlugosc4)
+dluzsza = ta.ema(close, dlugosc5)
+najdluzsza = ta.ema(close, dlugosc6)
+
+plot(najkrotsza, color = #ff0000)
+plot(krotsza, color = #ff5a00)
+plot(srednia, color = #00ffff)
+plot(dluga, color = #0000ff)
+plot(dluzsza, color = #ffff00)
+plot(najdluzsza, color = #ffffff)

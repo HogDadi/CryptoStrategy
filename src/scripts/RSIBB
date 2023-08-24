@@ -1,0 +1,41 @@
+//@version=3
+//Author HogDadi
+
+study(title="RSI z BB", shorttitle="RSIBB")
+src1 = input(defval=close, title="Source of RSI") 
+len = input(14, minval=1, title="Length of RSI")
+up = rma(max(change(src1), 0), len)
+down = rma(-min(change(src1), 0), len)
+rsi = down == 0 ? 100 : up == 0 ? 0 : 100 - (100 / (1 + up / down))
+plot(rsi, color=color(white, 0), linewidth = 2)
+
+OverB1 = input(defval=70, title="First line of Overbought value for RSI")
+OverS1 = input(defval=30, title="First line of Oversold value for RSI")
+OverB2 = input(defval=80, title="Second line of Overbought value for RSI")
+OverS2 = input(defval=20, title="Second line of Oversold value for RSI")
+MiddleLine = input(defval=63, title="Middle line of RSI")
+MiddleLine2 = input(defval=38, title="Middle line of RSI")
+
+band1 = hline(OverB1)
+band0 = hline(OverS1)
+band2 = hline(OverB2)
+band3 = hline(OverS2)
+bandM = hline(MiddleLine)
+bandM2 = hline(MiddleLine2)
+
+
+fill(band1, band0, color=purple, transp=90)
+fill(band1,band2, color=red,transp=90)
+fill(band3,band0, color=lime,transp=90)
+
+src = rsi
+length = input(20, minval=1, title="BB Length")
+mult = input(1.0, minval=0.001, maxval=50, title="BB StdDev")
+basis = sma(src, length)
+dev = mult * stdev(src, length)
+upper = basis + dev
+lower = basis - dev
+
+p1 = plot(upper, title='BB Upper', color=color(red, 0))
+p2 = plot(lower, title='BB Lower', color=color(green, 0))
+plot(basis, title='BB Basis', color=color(yellow, 0))

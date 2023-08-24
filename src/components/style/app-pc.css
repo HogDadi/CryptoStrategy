@@ -1,0 +1,29 @@
+@media (min-width: 1100px) {
+  .header-burger{
+    display: none;
+  }
+  .entry-social-btns-mobile{
+    display: none;
+  }
+  .indicator-sort{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.2rem;
+  }
+  .table{
+    position: absolute; 
+    width: 280px;
+    top: 52px;
+    right: 0;
+    background-color: var(--negative);
+    border: 1px solid var(--light-grey);
+    padding: 10px;
+  }
+  .noContent {
+    display: none;
+  }
+  .search-post {
+    margin: 0;
+  }
+}
