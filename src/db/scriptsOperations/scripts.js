@@ -92,8 +92,3 @@ export default function Scripts() {
     </div>
   )
 }
-
-//? TODO automatyczne załadowywanie nowych skryptów
-//? TODO opcje sortowania data/views/downloads
-//? TODO zrobić open script
-//? TODO zrobić trzy kropek skorelowany z wielkością teksu a nie z ilością liter (indywidualny dla każdego postu)

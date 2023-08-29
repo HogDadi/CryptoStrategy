@@ -10,7 +10,6 @@ updateProfile(auth.currentUser, {
 }).catch((error) => {
 
 });
-//customowe parametry
 user.setCustomParameters({
   'login_hint': 'user@example.com'
 });

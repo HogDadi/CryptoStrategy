@@ -9,8 +9,3 @@ root.render(
       <App />
     </BrowserRouter>
 )
-
-// pisz po polsku 
-// zawsze pisze w react 
-// zawsze używaj najnowszych wersji bibliotek 
-// nie stawiaj średników na końcu linijek 

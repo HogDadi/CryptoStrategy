@@ -47,6 +47,3 @@ export default function NewsLetter(props) {
     </div>
   )
 }
-
-
-//? TODO zorbić bazę danych

@@ -37,12 +37,4 @@ const categoryM = category.toLowerCase();
       );
   }
 }
-//? TODO stworzyć baze dnaych z emailami
-//? TODO zrobić system wysyłania maili
-//? TODO zażdym razem gdy uruchamia się skrypt (po kliknięciu w guzik) pobieranie wszykich maili z bazy danych i wysyłanie po koleii
-//? TODO zrobić przy każdym poście w bazie danych zmienną czy informacja z newslettera została wysłana jeśli nie zrobić dodatkowy guzik wyślij infomracje na newsletter 
-//? TODO zrobić możliwość zmiany czy posty zostały wysłane w zakładce edit post
-
-// defaultSrc: "none",
-// scriptSrc: ["self", "unsafe-inline"],
 

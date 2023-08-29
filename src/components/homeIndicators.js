@@ -32,7 +32,7 @@ export default function HomeIndicators() {
               <div
                 className="indicator-desc"
                 dangerouslySetInnerHTML={{
-                  __html: `${indicator.description.slice(0, 110)}...`,
+                  __html: `${indicator.description.slice(0, 200)}`,
                 }}
               ></div>
               <div className="indicator-btn">

@@ -172,7 +172,7 @@ export default function EditIndicator(props) {
               setImg(URL.createObjectURL(e.target.files[0]))
             }}
           />
-          <img src={img} alt="Podgląd przesłanego obrazu" id="img-preview" />
+          <img src={img} alt="Preview of the uploaded image" id="img-preview" />
         </div>
         {category === "scripts" && (
           <div>
@@ -270,14 +270,3 @@ function AlertToAccept(props) {
     </div>
   )
 }
-
-//? TODO dodać update zdjęcia ✓
-//? TODO dodać usuwanie posta ✓
-//? TODO przy usuwaniu posta usuwanie również zdjęcia z magazynu ✓
-//? TODO przy edycji tytułu zmienić również nazwę zdjęcia tak by wszystko się zgadzało ✓
-//? TODO edycja zdjęcia razem ze wszystkim (brak oddzielnego guzika)
-//? TODO zrobić możliwość edycji skryptu
-//? TODO zrobić zabezpieczenie przed przypadkowym usunięciem posta (potwierdzenie alertu)
-// TODO naprawic bo zmieniaja  nazwę skryptu nie są zmieniane nazwy skryptu i img powinny zostawać staredlatego tzreba wprowadzić wkońcu imgsrc i scriptsrc
-//? TODO zrobić możliwość zmiany zmiennej z bazy danych czy newsletter został wysłany
-//? TODO przy zmianie nazwy postu spradzenie czy nie ma takiej już w bazie danych

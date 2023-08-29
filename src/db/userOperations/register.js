@@ -49,7 +49,6 @@ export default function Register(props) {
         })
         .catch(error => {
           const errorCode = error.code
-          // const errorMessage = error.message
           if (errorCode === "auth/invalid-email") {
             setError("Invalid email!")
           } else if (errorCode === "auth/weak-password") {

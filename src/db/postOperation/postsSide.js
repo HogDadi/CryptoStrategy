@@ -97,8 +97,3 @@ export default function Posts() {
     </>
   )
 }
-
-//? TODO automatyczne załadowywanie nowych wskaźników
-//? TODO opcje sortowania data/views
-//? TODO ustalone stałe wymiary zdjęcia by nie było możliwości rozjeżdzania się layoutu ✓
-//? TODO zrobić trzy kropek skorelowany z wielkością teksu a nie z ilością liter (indywidualny dla każdego postu)

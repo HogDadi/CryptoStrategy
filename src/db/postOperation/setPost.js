@@ -188,7 +188,7 @@ function Script(props) {
           />
           <img
             src=""
-            alt="Podgląd przesłanego obrazu"
+            alt="Preview of the uploaded image"
             id="img-preview"
             style={{ display: "none" }}
           />
@@ -279,13 +279,3 @@ function Editor(props) {
     </div>
   )
 }
-
-//? TODO zrobić kartę wskaźników ✓
-//? TODO zrobić kartę skryptów
-//? TODO zrobić kartę instrukcji
-//? TODO zrobić kartę strategii
-//? TODO zrobić uniwersalną sekcję dla edytora ✓
-//? TODO rozwiązać problem ładowania się posta po tym jak go opublikujemy i automatycznie przeniesie nas na jego stronę
-// TODO tworząc post a później go edytując dodać linijkę imgSCR i scriptSRC by przy usuwaniu usunąć dobre zdjęcie i skrypt
-//? TODO sprawdzanie czy wszystkie elementy postu zostały wprowadzone.
-//? TODO zrobić zabezpiecznie przed zrobieniem posta o już ustniejącej nazwie

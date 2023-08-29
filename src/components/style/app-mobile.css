@@ -449,15 +449,3 @@
     font-size: clamp(0.8rem, calc(0.72rem + 0.41vw), 1rem);
   }
 }
-
-/* entry side */
-/*? TODO zrobić pasek nawigacyjny */
-/* TODO zrobić fajną wyszukiwarke w nim */
-/*? TODO dostosować rozłożenie ilości postów i ich wielkość */
-/*? TODO dostosować wielkość newslettera */
-/*? TODO na jakimś poziomie dostosowac login-bg logged-bg znikanie i pojawianieSię do wielkości obrazu a nie od 400px */
-/*? TODO dostosowanie wielkości fontów i marginów/paddingów do zmiany wielkości strony */
-
-/* category side */
-/* TODO zrobić tą zakładkę */
-/* TODO dostosować paddingi i fonty do różnych wymiarów (responsywność) */

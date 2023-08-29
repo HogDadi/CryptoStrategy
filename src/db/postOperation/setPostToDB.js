@@ -17,7 +17,7 @@ export default function setPostToDB(name, category, desc, img, callback) {
     const response = await fetch(img)
     const buffer = await response.arrayBuffer()
     const uint8Array = new Uint8Array(buffer)
-    // const base64string = btoa(String.fromCharCode(...uint8Array))
+ 
     const uploadTask = uploadBytesResumable(storageRef, uint8Array, metadata)
     uploadTask.on(
       "state_changed",
@@ -44,4 +44,3 @@ export default function setPostToDB(name, category, desc, img, callback) {
   }
   getImageData()
 }
-//? TODO uzależnienie nazwy zdjęcia w magazynie od nazwy posta i jego kategorii (wskaźnik, skrypt, itp)✓

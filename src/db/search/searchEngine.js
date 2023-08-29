@@ -49,26 +49,3 @@ export default function searchEngine(number, categoryM, value) {
     })
   }
 }
-
-// return new Promise((resolve, reject) => {
-//   onValue(
-//     dataRef,
-//     snapshot => {
-//       const data = snapshot.val()
-//       console.log(data)
-//       if(data !== null){
-//         const top = Object.keys(data)
-//         .sort(
-//           (a, b) =>
-//             new Date(data[b].createTime) - new Date(data[a].createTime)
-//         )
-//         .slice(0, number)
-//         .map(key => data[key])
-//       resolve(top)
-//       }
-//     },
-//     error => {
-//       reject(error)
-//     }
-//   )
-// })

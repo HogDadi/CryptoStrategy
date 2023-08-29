@@ -100,4 +100,3 @@ export default function EditUser(props) {
     </div>
   )
 }
-//? TODO możliwość wyłączenia newslettera na swoim koncie

@@ -93,8 +93,3 @@ export default function OpenScript(props) {
     </>
   )
 }
-
-//? TODO zrobić tę zakładkę
-//? TODO update strony z skryptami + zdjęcie
-//? TODO dodać sekcję komentarzy
-//? TODO dodać licznik views + download //! wcześniej poprawić działanie cookies

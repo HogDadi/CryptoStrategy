@@ -138,7 +138,7 @@ export default function NavBar(props) {
           <button
             id="switch-theme"
             role="switch"
-            aria-label="Przełącz motyw"
+            aria-label="Change theme"
             aria-checked={isThemeDark}
             onClick={changeTheme}
           >
@@ -149,7 +149,7 @@ export default function NavBar(props) {
           {!logged && (
             <button
               className="login-btn"
-              aria-label="Zaloguj się"
+              aria-label="Log in"
               onClick={() => setShowLoginSide("login")}
             >
               <i>
@@ -160,10 +160,10 @@ export default function NavBar(props) {
           {logged && (
             <button
               className="logged-btn"
-              aria-label="Przejdź do profilu"
+              aria-label="Go to profile"
               onClick={() => setShowLoginSide("logged")}
             >
-              <img src={img} alt="profilowe" />
+              <img src={img} alt="avatar" />
             </button>
           )}
         </div>
@@ -199,7 +199,7 @@ export default function NavBar(props) {
                       type="text"
                       id="search"
                       className="edit-input"
-                      placeholder="Wyszukaj..."
+                      placeholder="Search..."
                     />
                     <i onClick={searchX}>
                       <FontAwesomeIcon icon={faX} />
@@ -212,7 +212,7 @@ export default function NavBar(props) {
             {!logged && (
               <button
                 className="login-btn"
-                aria-label="Zaloguj się"
+                aria-label="Log in"
                 onClick={() => setShowLoginSide("login")}
               >
                 <i>
@@ -223,10 +223,10 @@ export default function NavBar(props) {
             {logged && (
               <button
                 className="logged-btn"
-                aria-label="Przejdź do profilu"
+                aria-label="Go to profile"
                 onClick={() => setShowLoginSide("logged")}
               >
-                <img src={img} alt="profilowe" />
+                <img src={img} alt="avatar" />
               </button>
             )}
             <div className="burger-menu" onClick={toogleBurger}>
@@ -271,8 +271,3 @@ export default function NavBar(props) {
     </nav>
   )
 }
-//? TODO zrobić animację wychodzenia wyszukiwarki z góry
-//? TODO zrobienie możliwości jej zamknięcia poprzez przycik
-//? TODO przycisk do usuwania całego textu z inputu
-//? TODO ułożenie wyników na całą stronę
-//? TODO możliwść scrolowania

@@ -119,6 +119,3 @@ export default function Search(props) {
     </>
   )
 }
-
-//? TODO zrobić system wyświetlania tego
-//? TODO zrobic powiadomienie że nie istanieje taka rezecz w naszej bazie danych jeśli nie ma wpisywanej przez użytkownika frazy

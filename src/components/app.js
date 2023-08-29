@@ -62,13 +62,6 @@ export default function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    // let lokacja = location.pathname.replace(/%C5%BA/g, "ź")
-    // lokacja = lokacja.split("/")[1]
-    // const newCategory = [...category, lokacja]
-    // if (newCategory.length === 3) {
-    //   newCategory.shift()
-    // }
-    // setCategory(newCategory)
   }, [location])
 
   return (
@@ -127,19 +120,3 @@ function Home(props) {
     </>
   )
 }
-//? TODO zrobić dodawanie postów w zakładce dla zalogowanych ale tylko wtedy gdy jesteś adminem ✓
-//? TODO zrobić jeden cookie do wszystkich postów (nazwy postów w treści), oddzielny do download w skryptach ✓
-//? TODO zrobić sekcję strategie
-//? TODO zrobić sekcję instrukcje
-//? TODO zrobić openScript ✓
-//? TODO dodać sekcję komentarzy do skryptów ✓
-//? TODO zrobić informację o używaniu cookies
-//? TODO zrobić wyszukiwarkę
-//? TODO zrobić layout pod telefony
-//? TODO zrobić jasny layout
-//? TODO zrobić zabezpieczenia przed dodaniem postu który już istnieje
-//? TODO zrobić zabezpieczenie przed edycją na nazwe która jest już zajęta
-// TODO zrobić własny edytor do przycinania zdjęć***
-// TODO dodać identyfikatory do nazw postów zamiast identyfikator = nazwa
-// TODO wprowadzić system ten który wykrywa wcześniej otwartą stronę do powrotów (linijki kodu 58-67)
-// TODO zrobić system zapisywania miejsca w którym był użytkownik po cofnięciu np. jestem w otwartym poście i cofam się do ogólnej kategorii w to samo miejsce w którym byłem

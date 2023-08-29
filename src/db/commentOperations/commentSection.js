@@ -18,7 +18,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function CommentSection(props) {
   const [top, setTop] = useState([])
   const [count, setCount] = useState(10)
-  // const [commentCount, setCommentCount] = useState(0);
   const [logged, category, name, nick, img, id, admin] = [
     props.logged,
     props.category,
@@ -74,11 +73,8 @@ export default function CommentSection(props) {
   }
 
   async function fetchData() {
-    // const commentCount = await getCommentsCount(count, category, name)
-    // console.log(commentCount)
     const topComments = await getComments(count, category, name)
     setTop(topComments)
-    // setCommentCount(commentCount)
   }
 
   const handleLike = async (type, commentId, event) => {
@@ -130,13 +126,6 @@ export default function CommentSection(props) {
   }
 
   const handleDeleteComment = commentId => {
-    // const confirmDelete = window.confirm(
-    //   "Czy napewno chcesz usunąć swój komentarz?"
-    // )
-    // if (confirmDelete) {
-    //   deleteComment(category, name, commentId)
-    //   fetchData()
-    // }
     deleteComment(category, name, commentId)
     const newTop = top.filter(comment => comment.id !== commentId)
     setTop(newTop)
@@ -283,22 +272,3 @@ export default function CommentSection(props) {
     </>
   )
 }
-//? dodawanie komentarzy dla zalogowanych użytkowników ✓
-//? możliwość wyświetlania komentów ✓
-//? reakcje na komentarze dla zalogowanych ✓
-//* aktualizacja w bazie danych ✓
-//* aktualizacja na bieżąco widoczna dla użytkownika ✓
-//* usuwanie active w przeciwległej opcji ✓
-//* odczyt na początku ładownia strony czy już kiedyś dałeś like i ustawienie active po tej stronie ✓
-//* zablokowanie możliwości dawania like dla nie zalogowanych ✓
-
-//? możliwość usuwania komenta ✓
-//? opcja dla admina na usuwanie każdego komenta ✓
-//? informacja czy na pewno chcesz usunąć komentarz
-//? możliwość edycji komenta ✓
-//? przycisk załadowania większej ilości komentów ✓
-//? wystylizować tę sekcję ✓
-// TODO zrobić wyświetlanie ilości komentarzy (bez wcześniszego pobierania ich np. pobrać długość sekcji comment posta lub przy każdym poście dodawać nową zmienna commentCount która się będzie zmieniać wraz z operacjami użytkownika)***
-//? TODO automatyczne ładowanie większej ilości komentów***
-// TODO odpowiedzi do komentów***
-// TODO więcej niż jeden komentarz na osobę***

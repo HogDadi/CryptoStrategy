@@ -91,9 +91,3 @@ const categoryM = category.toLowerCase()
     </>
   )
 }
-
-//? zrobić sekcję komentarzy ✓
-//? scroll button do góry ✓
-//? naliczanie wyświetleń wraz z cookie ✓
-//? TODO możliwe że uzależnienie nazwy zdjęcia od nazwy posta a nie od nazwy jak się nazywa na lokalnym urządzeniu ✓
-//? TODO wystylizowanie guzika z wysłaniem emaili z newslettera

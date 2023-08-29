@@ -232,7 +232,7 @@ body {
 #switch-theme i,
 .login-btn i {
   font-size: 20px;
-  filter: invert(1);
+  color: var(--white-black);
   transition-duration: 0.3s;
 }
 /*////////////////////////////*/

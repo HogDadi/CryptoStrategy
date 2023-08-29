@@ -36,7 +36,7 @@ export default function UpdateImg(props) {
       )}
       {previev && (
         <div className="edit-avatar flexC">
-          <img src={previev} alt="podgląd" />
+          <img src={previev} alt="preview" />
         </div>
       )}
       <div className="user-edit-img">
@@ -49,7 +49,7 @@ export default function UpdateImg(props) {
           onCrop={onCrop}
           onClose={onClose}
           src={src}
-          label="Wybierz obraz"
+          label="Select an image"
           exportMimeType="image/webp"
           mimeTypes="image/webp,image/png,image/jpeg"
           labelStyle={{ color: "grey", padding: "90px 40px" }}

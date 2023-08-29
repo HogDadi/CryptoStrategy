@@ -61,5 +61,3 @@ export default function LoggedSide(props) {
     </div>
   )
 }
-
-//? TODO zrobić by się dało to scrollować w przypadku w którym obraz jest za mały na wyświetlenie całości
