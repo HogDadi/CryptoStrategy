@@ -69,21 +69,21 @@ export default function EditIndicator(props) {
   }
   const send = async () => {
     const res = await getPost(newName, category)
-    if (res === null) {
-      if (name !== newName) {
+    if (name !== newName) {
+      if (res === null) {
         deleteImg(category, name)
-      }
-      if (newImg !== null || newFile !== null) {
-        updateImg(newImg, newName, file, category, newFile, async () => {
-          await updatePost(name, value, newName, views, category, newsletter)
-          navigate(link)
-        })
       } else {
+        setError("A post with that name already exists in the database")
+      }
+    }
+    if (newImg !== null || newFile !== null) {
+      updateImg(newImg, newName, file, category, newFile, async () => {
         await updatePost(name, value, newName, views, category, newsletter)
         navigate(link)
-      }
+      })
     } else {
-      setError("A post with that name already exists in the database")
+      await updatePost(name, value, newName, views, category, newsletter)
+      navigate(link)
     }
   }
 
