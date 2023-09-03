@@ -102,7 +102,7 @@ export default function App() {
           }
         />
         <Route path="Set-Post" element={<SetPost {...{ admin }} />} />
-
+        <Route path="*" element={<NoPage/>} />
       </Routes>
       <Footer />
       <ScrollToTopButton />
